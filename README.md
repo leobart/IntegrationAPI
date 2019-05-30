@@ -1,4 +1,4 @@
-# Lightning demo Application (Study Participants)
+# Lightning demo Application (Integration API)
 
 ## Setup:
 
