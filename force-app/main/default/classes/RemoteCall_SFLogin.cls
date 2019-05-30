@@ -17,9 +17,9 @@ public class RemoteCall_SFLogin extends RemoteCall{
         });
         if(securityToken == null) securityToken = '';
         this.hiddenParams.putAll(new Map<String, String>{
-                'LOGIN' => login,
-                'PASSWORD' => password,
-                'SECURITY_TOKEN' => securityToken
+                'login' => login,
+                'password' => password,
+                'securityToken' => securityToken
         });
 
     }
@@ -35,8 +35,8 @@ public class RemoteCall_SFLogin extends RemoteCall{
                 '   </soapenv:Header>' +
                 '   <soapenv:Body>' +
                 '       <urn:login>' +
-                '           <urn:username>{!LOGIN}</urn:username>' +
-                '           <urn:password>{!PASSWORD}{!SECURITY_TOKEN}</urn:password>' +
+                '           <urn:username>{!login}</urn:username>' +
+                '           <urn:password>{!password}{!securityToken}</urn:password>' +
                 '       </urn:login>' +
                 '   </soapenv:Body>' +
                 '</soapenv:Envelope>';
